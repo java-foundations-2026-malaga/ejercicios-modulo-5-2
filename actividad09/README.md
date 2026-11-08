@@ -2,7 +2,7 @@
 
 ## Interés por una película
 
-Comprueba conjuntamente precio y clasificación.
+Te interesa una película si el precio (`price`) es como máximo 15.0 **y** su valoración (`rating`) es de al menos 4. Comprueba ambas condiciones con `&&`: imprime `Me interesa ver la película` o, en caso contrario, `No me interesa ver la película`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ Me interesa ver la película
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

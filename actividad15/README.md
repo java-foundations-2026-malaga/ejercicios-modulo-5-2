@@ -2,7 +2,7 @@
 
 ## Descuento por tipo de televisión y tamaño
 
-Usa if anidados y asocia correctamente el else.
+Calcula el descuento con `if` anidados: si `tvType` es `"color"`, el descuento es 12 cuando `size` es 30 o más y 8 en otro caso; si no es de color, el descuento es 5. Compara cadenas con `equals` y usa llaves para que cada `else` quede asociado al `if` correcto. Imprime `Descuento: <descuento>`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ Descuento: 8
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

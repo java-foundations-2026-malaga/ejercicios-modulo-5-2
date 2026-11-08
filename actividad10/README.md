@@ -2,7 +2,7 @@
 
 ## Usa operador ternario para singular/plural
 
-Construye el mensaje mediante ?:.
+Imprime `I scored N goal` si `numberOfGoals` es 1 y `I scored N goals` en cualquier otro caso. Elige entre singular y plural con el operador ternario `?:`, sin usar `if`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ I scored 3 goals
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

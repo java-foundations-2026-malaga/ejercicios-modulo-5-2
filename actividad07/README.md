@@ -2,7 +2,7 @@
 
 ## Comprueba si un estudiante entra en el equipo
 
-Combina nota y ausencias con ||.
+Un estudiante entra en el equipo deportivo si su nota (`grade`) es de al menos 70 **o** tiene menos de 3 ausencias (`numberDaysAbsent`). Usa `||` en un `if`: imprime `You qualify for a sports team` o, en caso contrario, `You do not qualify for a sports team`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ You qualify for a sports team
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

@@ -2,7 +2,7 @@
 
 ## Comprueba si un estudiante recibe tutoría gratuita
 
-Usa ! y el número de ausencias.
+`madeFreeTutor` indica si la nota es alta (al menos 88). La tutoría gratuita es para quien **no** tiene nota alta y además tiene menos de 3 ausencias. Calcula el resultado en una variable `boolean` usando `!` y `&&`, e imprímelo con el formato `Free tutoring: <valor>`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ Free tutoring: true
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

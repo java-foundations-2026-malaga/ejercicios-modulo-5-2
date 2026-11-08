@@ -2,7 +2,7 @@
 
 ## Calcula tarifa por edad
 
-Usa if/else if/else para calcular la tarifa.
+Calcula la tarifa según la edad (`age`) con `if` / `else if` / `else`: los menores de 12 años pagan 3; de 12 a 64 años, 5; de 65 años en adelante, 2. Imprime `Tarifa: <tarifa>`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ Tarifa: 5
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

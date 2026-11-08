@@ -2,7 +2,7 @@
 
 ## Clasificador de notas
 
-Clasifica una nota en cuatro intervalos.
+Clasifica la nota (`grade`) con `if` / `else if` / `else` en cuatro intervalos: 90 o más → `Excellent`; de 80 a 89 → `Good`; de 60 a 79 → `Pass`; menos de 60 → `Fail`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ Good
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

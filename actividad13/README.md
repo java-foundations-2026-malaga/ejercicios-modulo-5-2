@@ -2,7 +2,7 @@
 
 ## Validador de compra online
 
-Combina cuenta, total y bloqueo de envío.
+Una compra está permitida si el usuario tiene cuenta (`hasAccount`), el total del carrito (`cartTotal`) es de al menos 20.0 **y** el envío **no** está bloqueado (`shippingBlocked`). Combina las tres condiciones con `&&` y `!` en una variable `boolean` e imprime `Compra permitida: <valor>`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ Compra permitida: true
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

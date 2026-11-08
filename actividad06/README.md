@@ -2,7 +2,7 @@
 
 ## Comprueba si un estudiante obtiene beca
 
-Combina nota y ausencias con &&.
+Un estudiante obtiene la beca si su nota (`grade`) es de al menos 88 **y** no tiene ninguna ausencia (`numberDaysAbsent`). Usa `&&` en un `if`: imprime `You qualify for the scholarship` o, en caso contrario, `You do not qualify for the scholarship`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ You qualify for the scholarship
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

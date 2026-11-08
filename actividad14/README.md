@@ -2,7 +2,7 @@
 
 ## Calculadora de impuestos por tramos
 
-Calcula el impuesto progresivo con if encadenados.
+Calcula el impuesto progresivo sobre `income` con `if` / `else if` / `else`: hasta 20000 no se paga nada; entre 20000 y 50000 se paga un 10 % de lo que supere 20000; por encima de 50000 se pagan 3000 más un 20 % de lo que supere 50000. Imprime `Impuesto: <impuesto>` (valor `double`).
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ Impuesto: 1500.0
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.
